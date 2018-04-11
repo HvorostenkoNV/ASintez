@@ -1,0 +1,97 @@
+.alfasintez-catalog-items-detail
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.alfasintez-catalog-items-detail > .images
+{
+	width: 400px;
+}
+.alfasintez-catalog-items-detail > .preview
+{
+	text-align: justify;
+}
+.alfasintez-catalog-items-detail.with-images > .preview
+{
+	width: calc(100% - 400px - 45px);
+}
+.alfasintez-catalog-items-detail:not(.with-images) > .preview
+{
+	width: 100%;
+}
+.alfasintez-catalog-items-detail > .preview > .title
+{
+	font-weight: bold;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.alfasintez-catalog-items-detail > .ask-form
+{
+	margin-top: 20px;
+	text-align: right;
+	width: 100%;
+}
+.alfasintez-catalog-items-detail > .offers
+{
+	margin-top: 40px;
+	width: 100%;
+}
+.alfasintez-catalog-items-detail > .additional
+{
+	margin-top: 40px;
+	width: 100%;
+}
+.alfasintez-catalog-items-detail > .detail
+{
+	margin-top: 20px;
+	width: 100%;
+}
+/* -------------------------------------------------------------------- */
+/* ----------------------------- ask form ----------------------------- */
+/* -------------------------------------------------------------------- */
+.alfasintez-catalog-items-detail-ask-form
+{
+	background-color: #FFF;
+	border-radius: 4px;
+	display: none;
+	padding: 20px 40px;
+	max-width: 400px;
+}
+.alfasintez-catalog-items-detail-ask-form > .close
+{
+	align-items: center;
+	background-color: #8DC04A;
+	border-radius: 15px;
+	color: #FFF;
+	cursor: pointer;
+	display: flex;
+	font-size: 20px;
+	justify-content: center;
+	line-height: 20px;
+	position: absolute;
+	transition: 0.5s;
+	right: -10px;
+	top: -15px;
+	width:  30px;
+	height: 30px;
+}
+.alfasintez-catalog-items-detail-ask-form .close:hover,
+.alfasintez-catalog-items-detail-ask-form .close:active,
+.alfasintez-catalog-items-detail-ask-form .close:focus
+{
+	background-color: #7EB341;
+}
+.alfasintez-catalog-items-detail-ask-form .title
+{
+	border-bottom: 1px solid #E0DEE1;
+	font-size: calc(1rem + 5px);
+	font-weight: bold;
+	line-height: calc(1rem + 5px);
+	overflow: hidden;
+	padding-bottom: 15px;
+	text-align: center;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+	white-space: nowrap;
+}

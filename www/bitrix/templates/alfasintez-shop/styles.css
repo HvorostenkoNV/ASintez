@@ -1,0 +1,222 @@
+body, html
+{
+	color: #868686;
+	font-family: 'Myriad Pro', sans-serif;
+	font-size:   17px;
+	line-height: 27px;
+	margin:  0;
+	padding: 0;
+}
+*
+{
+	box-sizing: border-box;
+	outline: none;
+}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ fonts ------------------------------- */
+/* -------------------------------------------------------------------- */
+@font-face
+{
+	font-family: 'Myriad Pro';
+	src:
+		url('fonts/MyriadPro/myriad-pro.eot')   format('embedded-opentype'),
+		url('fonts/MyriadPro/myriad-pro.woff')	format('woff'),
+		url('fonts/MyriadPro/myriad-pro.ttf')	format('truetype'),
+		url('fonts/MyriadPro/myriad-pro.svg') 	format('svg');
+	font-style:  normal;
+	font-weight: 400;
+}
+/* -------------------------------------------------------------------- */
+/* ----------------------------- headers ------------------------------ */
+/* -------------------------------------------------------------------- */
+h1
+{
+	text-transform: uppercase;
+	position: relative;
+	font-size: calc(1rem + 20px);
+	text-align: center;
+}
+h2
+{
+	font-size: calc(1rem + 11px);
+	color: #868686;
+	text-transform: uppercase;
+	position: relative;
+	text-align: center;
+}
+h3
+{
+
+}
+h4
+{
+
+}
+h5
+{
+
+}
+h6
+{
+
+}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ links ------------------------------- */
+/* -------------------------------------------------------------------- */
+a
+{
+
+}
+a:visited
+{
+
+}
+a:hover,
+a:active,
+a:focus
+{
+
+}
+/* -------------------------------------------------------------------- */
+/* -------------------------- form elements --------------------------- */
+/* -------------------------------------------------------------------- */
+input,
+select,
+button,
+textarea
+{
+	font-family: 'Myriad Pro', sans-serif;
+	font-size:   1rem;
+	line-height: 1rem;
+}
+input::-webkit-input-placeholder
+{
+	font-size:   1rem;
+	line-height: 1rem;
+}
+input[type=hidden],
+::-ms-clear,
+::-ms-reveal            {display: none}
+textarea                {resize: none}
+input:-webkit-autofill  {-webkit-box-shadow: 0 0 0 1000px white inset !important}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ tables ------------------------------ */
+/* -------------------------------------------------------------------- */
+table
+{
+	border-collapse: collapse;
+}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ others ------------------------------ */
+/* -------------------------------------------------------------------- */
+ul
+{
+	margin:  0;
+	padding: 0;
+}
+li
+{
+	list-style-type: none;
+}
+p
+{
+
+}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ classes ----------------------------- */
+/* -------------------------------------------------------------------- */
+.page-responsive-block
+{
+	margin: auto;
+	width: 1130px;
+}
+.page-block-title
+{
+
+}
+.page-block-title > .title::after
+{
+	content: '';
+	border-bottom: 1px solid #8dc04b;
+	max-width: 335px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	right: 0;
+	text-align: center;
+	margin: auto;
+}
+.page-block-title.title-white > .title{
+	color: #fff;
+}
+
+.page-block-title.title-white > .title::after {
+	content: '';
+	border-bottom: 1px solid #fff;
+}
+.contacts .page-block-title > .title::after
+{
+    content: '';
+    border-bottom: 1px solid #8dc04b;
+}
+.page-block-title > .title span
+{
+	text-transform: none;
+}
+.page-block-title > .text
+{
+	font-size: calc(1rem + 3px);
+	max-width: 550px;
+	color: #adadad;
+	text-align: center;
+	display: block;
+	margin: auto;
+}
+.contacts .page-block-title > .text {
+    color: #fff;
+}
+.has-wave-frame-top::before,
+.has-wave-frame-bottom::after
+{
+	background: url(images/wave_template.png) repeat-x;
+	content: '';
+	display: block;
+	height: 10px;
+}
+.has-wave-frame-top::before
+{
+	transform: rotate(180deg);
+}
+.under-pict-txt
+{
+	color: #838382;
+	font-size: calc(1em - 4px);
+	text-align: center;
+	padding: 0 15px;
+	display: block;
+	margin-top: 15px;
+	line-height: 22px;
+}
+
+.main-page-txt {
+	color: #7c7c7c;
+	font-size: calc(1em + 1px);
+	text-indent: 20px;
+	line-height: 30px;
+}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ media ------------------------------- */
+/* -------------------------------------------------------------------- */
+@media (max-width: 1199px)
+{
+	.page-responsive-block {width: 930px}
+}
+@media (max-width: 991px)
+{
+	.page-responsive-block {width: 710px}
+}
+@media (max-width: 767px)
+{
+	.page-responsive-block {width: calc(100% - 40px)}
+}

@@ -1,0 +1,50 @@
+/* -------------------------------------------------------------------- */
+/* ---------------------------- clear style --------------------------- */
+/* -------------------------------------------------------------------- */
+.alfasintez-form-input input
+{
+	background: transparent;
+	border: none;
+	color: inherit;
+	margin:  0;
+	padding: 0;
+}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ input ------------------------------- */
+/* -------------------------------------------------------------------- */
+.alfasintez-form-input
+{
+	align-items: center;
+	display: flex;
+}
+.alfasintez-form-input .alert-icon
+{
+	color: #D26851;
+	font-size: calc(1rem + 3px);
+	margin-right: 5px;
+}
+.alfasintez-form-input:not(.alert-input) .alert-icon
+{
+	visibility: hidden;
+}
+.alfasintez-form-input input
+{
+	border: 1px solid #E0DEE1;
+	border-radius: 4px;
+	line-height: 1rem;
+	padding: 7px 10px;
+}
+.alfasintez-form-input input::-webkit-input-placeholder
+{
+	color: #E0DEE1;
+	line-height: 1rem;
+	text-overflow:ellipsis;
+	transition: 0.5s;
+}
+.alfasintez-form-input input:focus::-webkit-input-placeholder
+{
+	color: transparent;
+}
+.alfasintez-form-input.required             {margin-left: -25px}
+.alfasintez-form-input.required       input {width: calc(100% - 25px)}
+.alfasintez-form-input:not(.required) input {width: 100%}

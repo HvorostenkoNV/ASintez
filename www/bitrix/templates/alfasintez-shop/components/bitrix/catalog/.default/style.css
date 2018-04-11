@@ -1,0 +1,25 @@
+.alfasintez-catalog-top-sections-cell
+{
+	padding-top: 30px;
+}
+.alfasintez-catalog
+{
+	display: flex;
+	justify-content: space-between;
+}
+.alfasintez-catalog > .left-col
+{
+	width: 300px;
+}
+.alfasintez-catalog > .left-col > .filter
+{
+	margin-bottom: 15px;
+}
+.alfasintez-catalog > .right-col
+{
+	width: calc(100% - 300px - 45px);
+}
+.alfasintez-catalog > .right-col > .description
+{
+	margin-top: 45px;
+}

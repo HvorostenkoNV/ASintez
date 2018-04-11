@@ -1,0 +1,44 @@
+/* -------------------------------------------------------------------- */
+/* ---------------------------- clear style --------------------------- */
+/* -------------------------------------------------------------------- */
+.alfasintez-form-button-alt-inverted
+{
+	background: transparent;
+	border: none;
+	color: inherit;
+	margin:  0;
+	padding: 0;
+}
+.alfasintez-form-button-alt-inverted,
+.alfasintez-form-button-alt-inverted:visited,
+.alfasintez-form-button-alt-inverted:hover,
+.alfasintez-form-button-alt-inverted:active,
+.alfasintez-form-button-alt-inverted:focus
+{
+	text-decoration: none;
+}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ button ------------------------------ */
+/* -------------------------------------------------------------------- */
+.alfasintez-form-button-alt-inverted
+{
+	border: 2px solid #FFF;
+	border-radius: 4px;
+	color: #FFF;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 1rem;
+	padding: 8px 15px;
+	transition: 0.5s;
+	text-align: center;
+}
+.alfasintez-form-button-alt-inverted:visited
+{
+	color: #FFF;
+}
+.alfasintez-form-button-alt-inverted:hover,
+.alfasintez-form-button-alt-inverted:active,
+.alfasintez-form-button-alt-inverted:focus
+{
+
+}

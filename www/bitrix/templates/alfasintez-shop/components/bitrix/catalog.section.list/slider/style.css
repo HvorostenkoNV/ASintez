@@ -1,0 +1,93 @@
+/* -------------------------------------------------------------------- */
+/* --------------------------- clear style ---------------------------- */
+/* -------------------------------------------------------------------- */
+.alfasintez-catalog-sections-slider a,
+.alfasintez-catalog-sections-slider a:visited,
+.alfasintez-catalog-sections-slider a:hover,
+.alfasintez-catalog-sections-slider a:active,
+.alfasintez-catalog-sections-slider a:focus
+{
+	color: inherit;
+	text-decoration: none;
+}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- list ------------------------------- */
+/* -------------------------------------------------------------------- */
+.alfasintez-catalog-sections-slider
+{
+	align-items: center;
+	display: flex;
+	margin: 0 -32px;
+}
+.alfasintez-catalog-sections-slider .navigation
+{
+	color: #8DC04A;
+	cursor: pointer;
+	font-size: 32px;
+	line-height: 32px;
+	text-align: center;
+	transition: 0.5s;
+	width:  32px;
+	height: 32px;
+}
+.alfasintez-catalog-sections-slider .navigation:hover,
+.alfasintez-catalog-sections-slider .navigation:active,
+.alfasintez-catalog-sections-slider .navigation:focus
+{
+	color: #7EB341;
+}
+.alfasintez-catalog-sections-slider .slider-block
+{
+	align-items: center;
+	display: flex;
+	margin: 0 -10px;
+	width: calc(100% - 32px * 2);
+}
+.alfasintez-catalog-sections-slider .slider-block .item
+{
+	align-items: center;
+	border-radius: 4px;
+	display: flex;
+	margin: 0 10px;
+	overflow: hidden;
+	position: relative;
+	width:  calc(100% / 5);
+	height: 150px;
+}
+.alfasintez-catalog-sections-slider .slider-block .item img
+{
+	height: 100%;
+	margin-left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	transition: 0.5s;
+}
+.alfasintez-catalog-sections-slider .slider-block .item a
+{
+	align-items: center;
+	color: #FFF !important;
+	display: flex;
+	font-size: calc(1rem + 4px);
+	justify-content: center;
+	position: absolute;
+	box-shadow: 0 0 0 320px rgba(0, 0, 0, 0.2) inset;
+	text-align: center;
+	transition: 0.5s;
+	top:    0;
+	bottom: 0;
+	left:   0;
+	right:  0;
+	z-index: 5;
+}
+.alfasintez-catalog-sections-slider .slider-block .item a:hover,
+.alfasintez-catalog-sections-slider .slider-block .item a:active,
+.alfasintez-catalog-sections-slider .slider-block .item a:focus
+{
+	box-shadow: 0 0 0 320px rgba(0, 0, 0, 0.1) inset;
+}
+.alfasintez-catalog-sections-slider .slider-block .item a:hover  + img,
+.alfasintez-catalog-sections-slider .slider-block .item a:active + img,
+.alfasintez-catalog-sections-slider .slider-block .item a:focus  + img
+{
+	height: 110% !important;
+}

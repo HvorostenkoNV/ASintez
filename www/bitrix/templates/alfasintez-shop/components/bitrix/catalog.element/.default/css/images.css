@@ -1,0 +1,230 @@
+/* -------------------------------------------------------------------- */
+/* ---------------------------- main image ---------------------------- */
+/* -------------------------------------------------------------------- */
+.alfasintez-catalog-items-detail > .images .main-image
+{
+	cursor: pointer;
+	height: 350px;
+	overflow: hidden;
+}
+.alfasintez-catalog-items-detail > .images .main-image img
+{
+	height: 100%;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+/* -------------------------------------------------------------------- */
+/* -------------------------- preview slider -------------------------- */
+/* -------------------------------------------------------------------- */
+.alfasintez-catalog-items-detail > .images .slider
+{
+	align-items: center;
+	display: flex;
+	margin: 10px -32px 0 -32px;
+}
+.alfasintez-catalog-items-detail > .images .slider .navigation
+{
+	color: #8DC04A;
+	cursor: pointer;
+	font-size: 32px;
+	line-height: 32px;
+	text-align: center;
+	transition: 0.5s;
+	width:  32px;
+	height: 32px;
+}
+.alfasintez-catalog-items-detail > .images .slider .navigation:hover,
+.alfasintez-catalog-items-detail > .images .slider .navigation:active,
+.alfasintez-catalog-items-detail > .images .slider .navigation:focus
+{
+	color: #7EB341;
+}
+.alfasintez-catalog-items-detail > .images .slider .slider-block
+{
+	align-items: center;
+	display: flex;
+	margin: 0 -2px;
+	width: calc(100% - 30px * 2);
+	height: 85px;
+}
+.alfasintez-catalog-items-detail > .images .slider .slider-block .item
+{
+	cursor: pointer;
+	margin: 0 2px;
+	overflow: hidden;
+	width:  25%;
+	height: 100%;
+}
+.alfasintez-catalog-items-detail > .images .slider .slider-block .item img
+{
+	height: 100%;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+/* -------------------------------------------------------------------- */
+/* --------------------------- image viewer --------------------------- */
+/* -------------------------------------------------------------------- */
+.alfasintez-catalog-items-detail-viewer
+{
+	background-color: #FFF;
+	border-radius: 4px;
+	display: none;
+	padding: 20px 40px 0 40px;
+	width:  800px;
+	height: 600px;
+}
+.alfasintez-catalog-items-detail-viewer > .close
+{
+	align-items: center;
+	background-color: #8DC04A;
+	border-radius: 15px;
+	color: #FFF;
+	cursor: pointer;
+	display: flex;
+	font-size: 20px;
+	justify-content: center;
+	line-height: 20px;
+	position: absolute;
+	transition: 0.5s;
+	right: -10px;
+	top: -15px;
+	width:  30px;
+	height: 30px;
+}
+.alfasintez-catalog-items-detail-viewer .close:hover,
+.alfasintez-catalog-items-detail-viewer .close:active,
+.alfasintez-catalog-items-detail-viewer .close:focus
+{
+	background-color: #7EB341;
+}
+.alfasintez-catalog-items-detail-viewer .title
+{
+	border-bottom: 1px solid #E0DEE1;
+	font-size: calc(1rem + 5px);
+	font-weight: bold;
+	line-height: calc(1rem + 5px);
+	overflow: hidden;
+	padding-bottom: 15px;
+	text-align: center;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+.alfasintez-catalog-items-detail-viewer .body
+{
+	align-items: center;
+	display: flex;
+	height: calc(600px - 20px - 40px);
+}
+/* ------------------------------------------- */
+/* --------------- main slider --------------- */
+/* ------------------------------------------- */
+.alfasintez-catalog-items-detail-viewer .main-slider
+{
+	align-items: center;
+	display: flex;
+	width:  100%;
+	height: calc(100% - 32px * 2);
+}
+.alfasintez-catalog-items-detail-viewer.with-slider .main-slider
+{
+	width: calc(100% - 150px);
+}
+.alfasintez-catalog-items-detail-viewer .main-slider .navigation
+{
+	color: #999;
+	cursor: pointer;
+	line-height: 48px;
+	font-size: 48px;
+	text-align: center;
+	transition: .3s;
+	width:  48px;
+	height: 48px;
+}
+.alfasintez-catalog-items-detail-viewer .main-slider .navigation:hover,
+.alfasintez-catalog-items-detail-viewer .main-slider .navigation:active,
+.alfasintez-catalog-items-detail-viewer .main-slider .navigation:focus
+{
+	color: #7EB341;
+}
+.alfasintez-catalog-items-detail-viewer .main-slider .slider-block
+{
+	align-items: center;
+	display: flex;
+	width:  calc(100% - 48px * 2);
+	height: 100%;
+}
+.alfasintez-catalog-items-detail-viewer .main-slider .slider-block .item
+{
+	overflow: hidden;
+	width:  100%;
+	height: 100%;
+}
+.alfasintez-catalog-items-detail-viewer .main-slider .slider-block .item img
+{
+	height: 100%;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+/* ------------------------------------------- */
+/* ------------- vertical slider ------------- */
+/* ------------------------------------------- */
+.alfasintez-catalog-items-detail-viewer .vertical-slider
+{
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	width:  150px;
+	height: 100%;
+}
+.alfasintez-catalog-items-detail-viewer .vertical-slider .navigation
+{
+	color: #8DC04A;
+	cursor: pointer;
+	font-size: 32px;
+	line-height: 32px;
+	text-align: center;
+	transition: 0.5s;
+	width:  32px;
+	height: 32px;
+}
+.alfasintez-catalog-items-detail-viewer .vertical-slider .navigation:hover,
+.alfasintez-catalog-items-detail-viewer .vertical-slider .navigation:active,
+.alfasintez-catalog-items-detail-viewer .vertical-slider .navigation:focus
+{
+	color: #7EB341;
+}
+.alfasintez-catalog-items-detail-viewer .vertical-slider .slider-block
+{
+	display: flex;
+	flex-direction: column;
+	margin: -2px 0;
+	overflow: hidden;
+	width:  100%;
+	height: calc(100% - 30px * 2);
+}
+.alfasintez-catalog-items-detail-viewer .vertical-slider .slider-block .item
+{
+	border-left: 3px solid #FFF;
+	cursor: pointer;
+	margin: 2px 0;
+	overflow: hidden;
+	width:  100%;
+	height: 25%;
+}
+.alfasintez-catalog-items-detail-viewer .vertical-slider .slider-block .item:hover,
+.alfasintez-catalog-items-detail-viewer .vertical-slider .slider-block .item:active,
+.alfasintez-catalog-items-detail-viewer .vertical-slider .slider-block .item:focus
+{
+	border-color: #8DC04A;
+}
+.alfasintez-catalog-items-detail-viewer .vertical-slider .slider-block .item.active
+{
+	border-color: #7EB341;
+}
+.alfasintez-catalog-items-detail-viewer .vertical-slider .slider-block .item img
+{
+	height: 100%;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}

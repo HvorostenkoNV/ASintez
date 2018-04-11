@@ -1,0 +1,9 @@
+.alfasintez-socnet-link,
+.alfasintez-socnet-link:visited,
+.alfasintez-socnet-link:hover,
+.alfasintez-socnet-link:active,
+.alfasintez-socnet-link:focus
+{
+	color: inherit;
+	text-decoration: none;
+}

@@ -1,0 +1,59 @@
+.alfasintez-smart-filter {
+    padding: 30px;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    position: relative;
+}
+
+.alfasintez-smart-filter.in-process::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 9;
+}
+
+.alfasintez-smart-filter .head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.alfasintez-smart-filter .head .open-button {
+    display: flex;
+    align-items: center;
+    color: #8DC04A;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.alfasintez-smart-filter .head .title {
+    font-weight: 700;
+    text-transform: uppercase;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: calc(1rem - 1px);
+}
+
+.alfasintez-smart-filter .body li {
+    margin-bottom: 10px;
+}
+
+.alfasintez-smart-filter .field-block.closed .head .open-button {
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alfasintez-smart-filter .field-block .body {
+    display: block;
+}
+
+.alfasintez-smart-filter .field-block.closed .body {
+    display: none;
+}

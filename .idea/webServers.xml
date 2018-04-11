@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="19e508f3-aca9-4aab-9c9d-e25e51c7393b" name="Hvorostenko" url="http://asintez.dev1.bx.av">
+        <fileTransfer host="asintez.dev1.bx.av" port="21" rootFolder="/home/bitrix">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" showHiddenFiles="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="423b01a8-e358-4f1c-93a0-f50744f7de2b" name="TEST" url="http://asintez.bx.av">
+        <fileTransfer host="asintez.bx.av" port="21" rootFolder="/home/bitrix">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" showHiddenFiles="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

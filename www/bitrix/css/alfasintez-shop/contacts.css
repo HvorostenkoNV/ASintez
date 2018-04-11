@@ -1,0 +1,98 @@
+/* -------------------------------------------------------------------- */
+/* --------------------------- contacts page -------------------------- */
+/* -------------------------------------------------------------------- */
+
+.contacts-block {
+    height: 910px;
+    position: relative;
+}
+
+.contacts-block .contacts-map {
+    height: 100%;
+}
+
+.contacts-block > .contacts-block-left {
+    background-color:  rgba(255, 255, 255, 0.9);
+    box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.16);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% / 2);
+    height: 910px;
+    z-index: 1;
+}
+
+.contacts-block > .contacts-block-left .contacts-block-map-list li {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.contacts-block > .contacts-block-left .contacts-block-map-list li svg {
+    width: 50px;
+    height: 40px;
+    color: #8dc04b;
+    margin-top: 5px;
+}
+
+.contacts-block > .contacts-block-left .contacts-block-map-list li:first-child svg {
+    transform: rotate(100deg);
+}
+
+.contacts-block > .contacts-block-left .contacts-block-map-list span {
+    display: block;
+    font-size: calc(1em + 7px);
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.contacts-block > .contacts-block-left .contacts-block-map-list {
+    margin-top: 40px;
+}
+
+.contacts-block > .contacts-block-left .contacts-block-map-list span:first-child {
+    font-size: calc(1em + 3px);
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.contacts-block > .contacts-block-left .map-left-side-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 5%;
+}
+
+.contacts-block > .contacts-block-left .map-left-side-list .page-block-title {
+    margin-right: 20%;
+}
+
+.contacts-block > .contacts-block-left .contacts-block-data-wrap {
+    margin-left: 15px;
+}
+
+.contacts-block > .contacts-block-left .contacts-map-form {
+    background-color:  #8dc04b;
+    max-width: 335px;
+    width: 100%;
+    height: 430px;
+    border-radius: 4px;
+}
+
+.contacts-block > .contacts-block-left .contacts-map-form .page-block-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color:  rgba(255, 255, 255, 0.9);
+    padding: 0 10px;
+    text-align: center;
+}
+.contacts-block > .contacts-block-left .contacts-map-form .page-block-title h3 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-size: calc(1em + 7px);
+}
+
+.contacts-block > .contacts-block-left .contacts-map-form .page-block-title span {
+    font-size: calc(1em - 3px);
+}

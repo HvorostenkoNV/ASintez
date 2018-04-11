@@ -1,0 +1,24 @@
+.alfasintez-form-result-ok
+{
+	color: #B6C0C6;
+	margin-top: 10px;
+	text-align: center;
+}
+.alfasintez-form .errors-block
+{
+	color: #D26851;
+	margin-bottom: 10px;
+}
+.alfasintez-form .field-row
+{
+	margin-bottom: 10px;
+}
+.alfasintez-form .buttons-row
+{
+	margin-top: 20px;
+}
+.alfasintez-form .buttons-row > *
+{
+	text-transform: uppercase;
+	width: 100%;
+}

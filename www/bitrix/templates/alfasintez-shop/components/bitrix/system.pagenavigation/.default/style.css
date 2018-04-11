@@ -1,0 +1,58 @@
+/* -------------------------------------------------------------------- */
+/* ---------------------------- clear style --------------------------- */
+/* -------------------------------------------------------------------- */
+.alfasintez-pager a,
+.alfasintez-pager a:visited,
+.alfasintez-pager a:hover,
+.alfasintez-pager a:active,
+.alfasintez-pager a:focus {
+	color: inherit;
+	text-decoration: none;
+}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ pager ------------------------------- */
+/* -------------------------------------------------------------------- */
+
+.alfasintez-pager {
+	display: flex;
+	justify-content: center;
+}
+
+.alfasintez-pager .page,
+.alfasintez-pager .switcher {
+	border: 1px solid #dcdcdc;
+	background-color: #fff;
+	width: 37px;
+	padding: 3px 0;
+	color: #adacac;
+	font-weight: 700;
+	text-align: center;
+	text-shadow: 0px 1px 0px #fff;
+	border-radius: 3px;
+	margin-right: 5px;
+}
+
+.alfasintez-pager .page:last-child,
+.alfasintez-pager .switcher.forward {
+	margin-right: 0;
+}
+
+.alfasintez-pager .page.selected {
+	background-color: #8dc04b;
+	color: #fff;
+	text-shadow: none;
+	border: none;
+}
+
+.alfasintez-pager .space {
+	display: flex;
+	margin: 0 10px;
+	align-self: flex-end;
+	color: #adacac;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.alfasintez-pager .switcher.back {
+	margin-right: 5px;
+}

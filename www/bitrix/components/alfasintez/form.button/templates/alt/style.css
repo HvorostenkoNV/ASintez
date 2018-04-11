@@ -1,0 +1,46 @@
+/* -------------------------------------------------------------------- */
+/* ---------------------------- clear style --------------------------- */
+/* -------------------------------------------------------------------- */
+.alfasintez-form-button-alt
+{
+	background: transparent;
+	border: none;
+	color: inherit;
+	margin:  0;
+	padding: 0;
+}
+.alfasintez-form-button-alt,
+.alfasintez-form-button-alt:visited,
+.alfasintez-form-button-alt:hover,
+.alfasintez-form-button-alt:active,
+.alfasintez-form-button-alt:focus
+{
+	text-decoration: none;
+}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ button ------------------------------ */
+/* -------------------------------------------------------------------- */
+.alfasintez-form-button-alt
+{
+	background-color: #FFF;
+	border: 2px solid #8DC04A;
+	border-radius: 4px;
+	color: #8DC04A;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 1rem;
+	padding: 8px 15px;
+	transition: 0.5s;
+	text-align: center;
+}
+.alfasintez-form-button-alt:visited
+{
+	color: #8DC04A;
+}
+.alfasintez-form-button-alt:hover,
+.alfasintez-form-button-alt:active,
+.alfasintez-form-button-alt:focus
+{
+	background-color: #8DC04A;
+	color: #FFF;
+}

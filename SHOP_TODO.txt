@@ -1,0 +1,54 @@
+HIDE_NAV_CHAIN  - внедрить свойство раздела
+HIDE_MAIN_TITLE - внедрить свойство раздела
+FULLSCREEN_PAGE - внедрить свойство раздела
+создать форму обр.связи
+создать форму узнать цену
+создать каталог товаров/предложений
+установить привязку свойств к разделам
+создать иблок новости
+настроить поиск
+настроить инфоблоки для поиска
+sitemap
+переидексайия/кэш
+
+CSS wave классы
+FOOTER waves
+default image
+watermark
+
+PAGE TITLE
+BREADCRUMBS
+SEARCH
+Microdata menu
+menu catalog selected
+Общий рефактор/D7 переход
+.parameters компонентов
+Переделать цвета по брендбуку
+html tags default
+W3C Валидаторы
+MOBILE
+
+index SEO
+catalog SEO
+about SEO
+blog SEO
+contacts SEO
+Параметры микроразметки
+404
+
+form button alt inverted HOVER
+
+INDEX перебрать
+CONTACTS перебрать
+ABOUT перебрать
+CATALOG vertical menu перебрать
+CATALOG item menu перебрать
+pager перебрать
+
+CATALOG sections slider - slide animation trouble/round border
+CATALOG items list hover
+CATALOG rating
+CATALOG empty list
+CATALOG item categories
+CATALOG item colors+soclinks
+CATALOG item same goods

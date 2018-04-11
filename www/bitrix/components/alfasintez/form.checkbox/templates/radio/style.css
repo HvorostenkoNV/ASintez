@@ -1,0 +1,34 @@
+.alfasintez-form-radio
+{
+	align-items: center;
+	display: flex;
+}
+.alfasintez-form-radio input
+{
+	display: none;
+}
+.alfasintez-form-radio .icon
+{
+	border: 1px solid #EEE;
+	border-radius: 8px;
+	box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.5);
+	color: transparent;
+	cursor: pointer;
+	display: flex;
+	font-size: 12px;
+	margin-right: 3px;
+	padding: 2px;
+	transition: 0.5s;
+}
+.alfasintez-form-radio.checked .icon
+{
+	color: #7EB341;
+}
+.alfasintez-form-radio label
+{
+	cursor: pointer;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: calc(100% - 16px - 3px);
+}

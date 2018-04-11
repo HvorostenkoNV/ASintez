@@ -1,0 +1,73 @@
+/* -------------------------------------------------------------------- */
+/* --------------------------- clear style ---------------------------- */
+/* -------------------------------------------------------------------- */
+.alfasintez-catalog-preview > .section > .image a,
+.alfasintez-catalog-preview > .section > .image a:visited,
+.alfasintez-catalog-preview > .section > .image a:hover,
+.alfasintez-catalog-preview > .section > .image a:active,
+.alfasintez-catalog-preview > .section > .image a:focus
+{
+	color: inherit;
+	text-decoration: none;
+}
+/* -------------------------------------------------------------------- */
+/* ----------------------------- catalog ------------------------------ */
+/* -------------------------------------------------------------------- */
+.alfasintez-catalog-preview > .section
+{
+	display: flex;
+}
+.alfasintez-catalog-preview > .section:not(:last-child)
+{
+	margin-bottom: 30px;
+}
+.alfasintez-catalog-preview > .section > .image
+{
+	align-items: center;
+	border-radius: 4px;
+	display: flex;
+	overflow: hidden;
+	position: relative;
+	width: calc( (100% - 48px * 2) / 5 );
+}
+.alfasintez-catalog-preview > .section > .image img
+{
+	height: 100%;
+	margin-left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	transition: 0.5s;
+}
+.alfasintez-catalog-preview > .section > .image a
+{
+	align-items: center;
+	color: #FFF !important;
+	display: flex;
+	font-size: calc(1rem + 4px);
+	justify-content: center;
+	position: absolute;
+	box-shadow: 0 0 0 320px rgba(0, 0, 0, 0.2) inset;
+	text-align: center;
+	transition: 0.5s;
+	top:    0;
+	bottom: 0;
+	left:   0;
+	right:  0;
+	z-index: 5;
+}
+.alfasintez-catalog-preview > .section > .image a:hover,
+.alfasintez-catalog-preview > .section > .image a:active,
+.alfasintez-catalog-preview > .section > .image a:focus
+{
+	box-shadow: 0 0 0 320px rgba(0, 0, 0, 0.1) inset;
+}
+.alfasintez-catalog-preview > .section > .image a:hover  + img,
+.alfasintez-catalog-preview > .section > .image a:active + img,
+.alfasintez-catalog-preview > .section > .image a:focus  + img
+{
+	height: 110% !important;
+}
+.alfasintez-catalog-preview > .section > .list
+{
+	width: calc( 100% - (100% - 48px * 2) / 5 );
+}

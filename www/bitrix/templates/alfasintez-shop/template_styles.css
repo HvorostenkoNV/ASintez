@@ -1,0 +1,448 @@
+/* -------------------------------------------------------------------- */
+/* ------------------------------ header ------------------------------ */
+/* -------------------------------------------------------------------- */
+header
+{
+	background: url(images/header_bg.jpg) no-repeat;
+	background-size: cover;
+}
+header:not(.main-page)
+{
+	padding-bottom: 30px;
+}
+/* ------------------------------------------- */
+/* ---------------- first row ---------------- */
+/* ------------------------------------------- */
+header .first-row
+{
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0;
+}
+header .first-row .logo
+{
+	align-items: center;
+	display: flex;
+}
+header .first-row .logo img
+{
+	height: 50px;
+}
+header .first-row .logo-mobile
+{
+	align-items: center;
+	display: none;
+}
+header .first-row .search-cell
+{
+	width: 250px;
+}
+/* ------------------------------------------- */
+/* ---------------- second row --------------- */
+/* ------------------------------------------- */
+header .second-row
+{
+	align-items: stretch;
+	background-color: #8DC04A;
+	color: #FFF;
+	display: flex;
+	font-size: calc(1rem - 2px);
+	font-weight: bold;
+	height: 50px;
+	justify-content: center;
+	letter-spacing: 0.1em;
+	line-height: calc(1rem - 2px);
+	text-transform: uppercase;
+}
+header .second-row .menu-cell
+{
+	display: flex;
+}
+header .second-row .menu-cell a
+{
+	align-items: center;
+	display: flex;
+	padding: 0 20px;
+	transition: 0.5s;
+}
+header .second-row .menu-cell a.selected,
+header .second-row .menu-cell a:hover,
+header .second-row .menu-cell a:active,
+header .second-row .menu-cell a:focus
+{
+	background-color: #7EB341;
+}
+header .second-row .call-back-call-cell
+{
+	align-items: center;
+	display: flex;
+	padding: 0 20px;
+}
+/* ------------------------------------------- */
+/* ---------------- third row ---------------- */
+/* ------------------------------------------- */
+header .third-row
+{
+	padding: 120px 0 220px 0;
+	max-width: 800px;
+	text-align: center;
+}
+header .third-row .title
+{
+	align-items: center;
+	display: flex;
+}
+header .third-row .title > *:nth-child(1),
+header .third-row .title > *:nth-child(3)
+{
+	background-color: #FFF;
+	flex-grow: 1;
+	height: 3px;
+	opacity: 0.3;
+}
+header .third-row .title > *:nth-child(2)
+{
+	color: #8DC04A;
+	font-size: calc(1rem + 10px);
+	line-height: calc(1rem + 10px);
+	overflow: hidden;
+	padding: 0 10px;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+	white-space: nowrap;
+	max-width: calc(100% - 40px);
+}
+header .third-row .text,
+header .third-row .phone
+{
+	color: #FFF;
+	font-size: calc(1rem + 4px);
+	line-height: calc(1rem + 4px);
+	margin-top: 20px;
+}
+header .third-row .phone
+{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+header .third-row .phone::before
+{
+	background-image: url(images/phone-ring.svg);
+	background-size: cover;
+	content: '';
+	margin-right: 5px;
+	height: 30px;
+	width:  30px;
+}
+/* ------------------------------------------- */
+/* --------------- bottom frame -------------- */
+/* ------------------------------------------- */
+header .bottom-frame
+{
+	background: url(images/header_bottom_frame.svg) calc(50% - 8px) 2px no-repeat;
+	background-size: cover;
+	height: 70px;
+	position: relative;
+}
+header .bottom-frame::before
+{
+	animation: mouseMove 2s linear infinite;
+	background: url(images/mouse.svg) center center no-repeat;
+	background-size: cover;
+	content: '';
+	display: block;
+	margin: auto;
+	position: absolute;
+	left:  0;
+	right: 0;
+	top: -50%;
+	width:  70px;
+	height: 70px;
+}
+@keyframes mouseMove
+{
+	0% 		{top: -100%}
+	50%		{top: -50%}
+	100%	{top: -100%}
+}
+/* -------------------------------------------------------------------- */
+/* -------------------------- call back form -------------------------- */
+/* -------------------------------------------------------------------- */
+#call-back-form
+{
+	background-color: #FFF;
+	border-radius: 4px;
+	display: none;
+	padding: 20px 40px;
+	max-width: 400px;
+}
+#call-back-form > .close
+{
+	align-items: center;
+	background-color: #8DC04A;
+	border-radius: 15px;
+	color: #FFF;
+	cursor: pointer;
+	display: flex;
+	font-size: 20px;
+	justify-content: center;
+	line-height: 20px;
+	position: absolute;
+	transition: 0.5s;
+	right: -10px;
+	top:   -15px;
+	width:  30px;
+	height: 30px;
+}
+#call-back-form .close:hover,
+#call-back-form .close:active,
+#call-back-form .close:focus
+{
+	background-color: #7EB341;
+}
+#call-back-form > .title
+{
+	border-bottom: 1px solid #E0DEE1;
+	font-size: calc(1rem + 5px);
+	font-weight: bold;
+	line-height: calc(1rem + 5px);
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+	text-align: center;
+	text-transform: uppercase;
+}
+/* -------------------------------------------------------------------- */
+/* ---------------------------- breadcrumb ---------------------------- */
+/* -------------------------------------------------------------------- */
+#page-breadcrumb
+{
+	align-items: center;
+	display: flex;
+	font-size: calc(1rem - 4px);
+	line-height: calc(1rem - 4px);
+	padding-top: 30px;
+}
+#page-breadcrumb a
+{
+	color: inherit;
+	margin: 0 10px;
+	text-decoration: none;
+}
+#page-breadcrumb a:first-child
+{
+	margin-left: 0;
+}
+#page-breadcrumb a:hover,
+#page-breadcrumb a:active,
+#page-breadcrumb a:focus
+{
+	text-decoration: underline;
+}
+/* -------------------------------------------------------------------- */
+/* -------------------------------- H1 -------------------------------- */
+/* -------------------------------------------------------------------- */
+#page-title
+{
+	padding-top: 30px;
+}
+/* -------------------------------------------------------------------- */
+/* ------------------------------- body ------------------------------- */
+/* -------------------------------------------------------------------- */
+#page-workarea:not(.full-screen)
+{
+	padding: 30px 0;
+}
+/* -------------------------------------------------------------------- */
+/* ------------------------------ footer ------------------------------ */
+/* -------------------------------------------------------------------- */
+footer
+{
+	background-color: #F6F6F6;
+	position: relative;
+}
+footer::before
+{
+	background: url(images/wave_template_footer.png) repeat-x;
+	content: '';
+	display: block;
+	position: absolute;
+	top: -10px;
+	width: 100%;
+	height: 10px;
+	z-index: 10;
+}
+footer > .wraper
+{
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px 0 40px 0;
+}
+/* ------------------------------------------- */
+/* ------------------- logo ------------------ */
+/* ------------------------------------------- */
+footer .logo
+{
+	align-items: center;
+	display: flex;
+}
+footer .logo img
+{
+	width: 150px;
+}
+/* ------------------------------------------- */
+/* ------------------ menu ------------------- */
+/* ------------------------------------------- */
+footer .menu-cell
+{
+	align-items: center;
+	display: flex;
+	justify-content: flex-end;
+	width: calc(100% - 150px - 330px);
+}
+footer .menu-cell a
+{
+	font-size: calc(1rem + 1px);
+	letter-spacing: 0.1em;
+	line-height: calc(1rem + 1px);
+	text-transform: uppercase;
+}
+footer .menu-cell a:visited
+{
+	color: inherit;
+	text-decoration: underline;
+}
+footer .menu-cell a:not(:last-child)
+{
+	margin-right: 30px;
+}
+/* ------------------------------------------- */
+/* -------------- to top button -------------- */
+/* ------------------------------------------- */
+footer .scroll-top-button-cell
+{
+	display: flex;
+	justify-content: center;
+	width: 330px;
+}
+footer .scroll-top-button-cell .button
+{
+	color: #8DC04A;
+	cursor: pointer;
+	font-size: 60px;
+	line-height: 60px;
+	transition: 0.5s;
+}
+footer .scroll-top-button-cell .button:hover,
+footer .scroll-top-button-cell .button:active,
+footer .scroll-top-button-cell .button:focus
+{
+	color: #7EB341;
+}
+/* ------------------------------------------- */
+/* ------------- additional text ------------- */
+/* ------------------------------------------- */
+footer .additional-text
+{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 400px;
+}
+/* ------------------------------------------- */
+/* ---------------- soc links ---------------- */
+/* ------------------------------------------- */
+footer .soc-links-cell
+{
+	color: #8DC04A;
+	font-size: 35px;
+	line-height: 35px;
+	text-align: center;
+	width: calc(100% - 400px - 400px);
+}
+footer .soc-links-cell a
+{
+	transition: 0.8s;
+}
+footer .soc-links-cell a:hover,
+footer .soc-links-cell a:active,
+footer .soc-links-cell a:focus
+{
+	color: #7EB341;
+}
+/* ------------------------------------------- */
+/* ------------- user agreement -------------- */
+/* ------------------------------------------- */
+footer .user-agreement-link-cell
+{
+	display: flex;
+	font-size: calc(1rem + 1px);
+	justify-content: flex-end;
+	letter-spacing: 0.1em;
+	line-height: calc(1rem + 1px);
+	text-transform: uppercase;
+	width: 400px;
+}
+footer .user-agreement-link-cell a
+{
+	color: inherit;
+	text-decoration: none;
+}
+/* ------------------------------------------- */
+/* --------- links bottom decoration --------- */
+/* ------------------------------------------- */
+footer .additional-text,
+footer .soc-links-cell,
+footer .user-agreement-link-cell
+{
+	margin-top: 10px;
+}
+footer .menu-cell,
+footer .user-agreement-link-cell
+{
+	margin-bottom: -7px;
+}
+footer .menu-cell                a::after,
+footer .user-agreement-link-cell a::after
+{
+	background-color: #8DC04A;
+	content: '';
+	display: block;
+	height: 2px;
+	margin-top: 5px;
+	transition: width 0.5s ease, background-color .5s ease;
+	width: 0;
+}
+footer .menu-cell                a:hover::after,
+footer .menu-cell                a:active::after,
+footer .menu-cell                a:focus::after,
+footer .user-agreement-link-cell a:hover::after,
+footer .user-agreement-link-cell a:active::after,
+footer .user-agreement-link-cell a:focus::after
+{
+	width: 100%;
+}
+/* -------------------------------------------------------------------- */
+/* ------------------------- media - max 1199 ------------------------- */
+/* -------------------------------------------------------------------- */
+@media (max-width: 1199px)
+{
+
+}
+/* -------------------------------------------------------------------- */
+/* ------------------------- media - max 991 -------------------------- */
+/* -------------------------------------------------------------------- */
+@media (max-width: 991px)
+{
+
+}
+/* -------------------------------------------------------------------- */
+/* ------------------------- media - max 767 -------------------------- */
+/* -------------------------------------------------------------------- */
+@media (max-width: 767px)
+{
+
+}

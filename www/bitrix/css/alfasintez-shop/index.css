@@ -1,0 +1,759 @@
+/* -------------------------------------------------------------------- */
+/* ----------------------------- about us ----------------------------- */
+/* -------------------------------------------------------------------- */
+
+#main-page > .about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-page > .about-us .about-half-side {
+    width: calc(100% - 55%);
+    padding-left: calc(100% - 92%);
+    position: relative;
+    color: #adadad;
+    font-size: calc(1em + 3px);
+}
+
+#main-page > .about-us .about-half-side:first-of-type {
+    padding-left: 0;
+    width: calc(100% - 45%);
+    text-align: justify;
+}
+
+#main-page > .about-us .about-inner {
+    display: flex;
+    margin-top: 30px;
+}
+
+#main-page > .about-us .about-bottom-txt {
+    max-width: 485px;
+}
+
+#main-page > .about-us .about-line-animate.first-top-line {
+    position: absolute;
+    bottom: 255px;
+    left: 270px;
+    right: 0;
+ }
+
+#main-page > .about-us .about-line-animate.second-top-line {
+    position: absolute;
+    bottom: 255px;
+    left: 380px;
+    right: 0;
+}
+
+#main-page > .about-us .about-line-animate.first-bottom-line {
+    position: absolute;
+    top: 200px;
+    left: 125px;
+}
+
+#main-page > .about-us .about-line-animate.second-bottom-line {
+    position: absolute;
+    top: 200px;
+    left: auto;
+    right: 98px;
+}
+
+#main-page > .about-us .about-line-animate {
+    height: 0;
+    width: 0;
+    border-left: 2px dashed #8DC04B;
+    border-top: 2px dashed #8DC04B;
+    border-radius: 30px 0 0 0;
+}
+
+#main-page > .about-us .about-line-animate.first-bottom-line,
+#main-page > .about-us .about-line-animate.second-bottom-line {
+    transform: scale(-1, -1);
+    position: absolute;
+    top: 238px;
+    animation-name: diagonal-slide-hight;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#main-page > .about-us .about-line-animate.first-top-line,
+#main-page > .about-us .about-line-animate.second-bottom-line {
+    animation-name: diagonal-slide-hight;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes diagonal-slide-hight {
+    50% {
+        height: 110px;
+    }
+    100% {
+        height: 110px;
+        width: 80px;
+    }
+}
+
+#main-page > .about-us .about-line-animate.second-top-line,
+#main-page > .about-us .about-line-animate.first-bottom-line {
+    animation-name: diagonal-slide-low;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#main-page > .about-us .about-line-animate.first-bottom-line .about-eggs-txt,
+#main-page > .about-us .about-line-animate.second-bottom-line .about-eggs-txt {
+    transform: rotate(180deg);
+    top: -10px;
+}
+
+@keyframes diagonal-slide-low {
+    50% {
+        height: 50px;
+    }
+    100% {
+        height: 50px;
+        width: 70px;
+    }
+}
+
+#main-page > .about-us .about-line-animate span {
+    display: none;
+    color: #8DC04B;
+    text-transform: uppercase;
+    line-height: 20px;
+    text-align: center;
+
+}
+
+#main-page > .about-us .about-line-animate span.about-eggs-txt {
+    font-size: calc(1em - 1px);
+    display: block;
+    margin-left: 0;
+    position: absolute;
+    top: -15px;
+    opacity: 0;
+    width: auto;
+    white-space: pre;
+    animation-name: show-span;
+    animation-duration: 2.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show-span {
+    to {
+        margin-left: 90px;
+        opacity: 1
+    }
+}
+
+/* -------------------------------------------------------------------- */
+/* ------------------------------ slides ------------------------------ */
+/* -------------------------------------------------------------------- */
+
+#main-page > .slides {
+    display: flex;
+    flex-direction: row;
+    max-height: 535px;
+    height: 100%;
+    margin-top: 140px;
+    position: relative;
+    overflow: hidden;
+}
+
+#main-page > .slides .slides-inner {
+    width: calc(100% / 2);
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-size: cover;
+    transition: 6s;
+}
+
+#main-page > .slides .slides-inner::before {
+    content: '';
+    background-color:  rgba(35, 41, 54, 0.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+#main-page > .slides .slides-inner span {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    line-height: 34px;
+    min-height: 70px;
+    padding: 0 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#main-page > .slides .slide-left img,
+#main-page > .slides .slide-right img {
+    height: auto;
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 6s;
+}
+
+#main-page > .slides .slide-btn {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    position: relative;
+    color: #fff;
+    background-color: transparent;
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: all 0.5s ease;
+}
+
+#main-page > .slides .slide-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+#main-page > .slides .slides-inner .slide-text-box {
+    transition: all 0.5s ease;
+    text-align: center;
+    padding: 50px 0;
+    max-width: 450px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+#main-page > .slides .slides-inner:hover img {
+    cursor: pointer;
+    width: 115%;
+    transition: 6s;
+}
+
+#main-page > .slides .slides-inner:hover .slide-text-box {
+    background-color:  rgba(141, 192, 75, 0.8);
+    cursor: pointer;
+}
+
+/* -------------------------------------------------------------------- */
+/* ----------------------------- products ----------------------------- */
+/* -------------------------------------------------------------------- */
+
+#main-page > .products > .list {
+	margin-right: -48px;
+}
+
+/* -------------------------------------------------------------------- */
+/* ------------------------ cooperate with us ------------------------- */
+/* -------------------------------------------------------------------- */
+
+#main-page > .cooperate-with-us {
+    background-color: #8dc04b;
+    margin-top: 70px;
+    text-align: center;
+}
+
+#main-page > .cooperate-with-us .cooperate-with-us-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding-bottom: 50px;
+}
+
+#main-page > .cooperate-with-us .cooperate-inner-box {
+    width: calc(100% / 4);
+    text-align: center;
+}
+
+#main-page > .cooperate-with-us .cooperate-inner-box:first-child img {
+    height: 150px;
+}
+
+#main-page > .cooperate-with-us .cooperate-inner-box:nth-child(2) img,
+#main-page > .cooperate-with-us .cooperate-inner-box:nth-child(3) img {
+    height: 170px;
+}
+
+#main-page > .cooperate-with-us .cooperate-inner-box:last-child img {
+    height: 220px;
+}
+
+#main-page > .cooperate-with-us .corporate-txt {
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    font-size: calc(1em + 5px);
+    font-weight: bold;
+}
+
+/* -------------------------------------------------------------------- */
+/* ------------------------ production cycle -------------------------- */
+/* -------------------------------------------------------------------- */
+
+#main-page > .production-cycle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#main-page > .production-cycle .production-wrapper {
+    display: flex;
+    margin-top: 50px;
+}
+
+#main-page > .production-cycle .production-inner {
+    width: calc(100% / 4);
+    text-align: center;
+}
+
+#main-page > .production-cycle .production-inner figure {
+    margin: 0;
+    display: block;
+    height: auto;
+}
+
+#main-page > .production-cycle .production-inner figure img {
+    border-radius: 100%;
+    border: 4px solid #e8eaec;
+    transition: .4s;
+    width: 180px;
+    height: 180px;
+}
+
+#main-page > .production-cycle .production-inner figure:hover img {
+    margin-top: -20px;
+    width: 200px;
+    height: 200px;
+    transition: .4s;
+}
+
+#main-page > .production-cycle .production-inner figcaption h3 {
+    color: #414042;
+    text-transform: uppercase;
+    font-size: calc(1em - 2px);
+    margin-bottom: 0;
+}
+
+/* -------------------------------------------------------------------- */
+/* --------------------------- text slider ---------------------------- */
+/* -------------------------------------------------------------------- */
+
+#main-page > .text-slider {
+    position: relative;
+    margin-top: 40px;
+}
+
+#main-page > .text-slider .text-slider-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    position: relative;
+}
+
+#main-page > .text-slider .text-slider-inner::before {
+    content: '';
+    background-color:  rgba(59, 64, 58, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#main-page > .text-slider .text-slider-inner.text-slide-1 {
+    background: url(/bitrix/images/alfasintez-shop/index/slider/slider-bg-1.jpg) center -300px / cover no-repeat;
+}
+
+#main-page > .text-slider .text-slider-inner.text-slide-2 {
+    background: url(/bitrix/images/alfasintez-shop/index/slider/slider-bg-1.jpg) center -300px / cover no-repeat;
+}
+
+#main-page > .text-slider .text-slider-inner.text-slide-3 {
+    background: url(/bitrix/images/alfasintez-shop/index/slider/slider-bg-1.jpg) center -300px / cover no-repeat;
+}
+
+#main-page > .text-slider .slider-info {
+    max-width: 640px;
+    position: relative;
+    color: #fff;
+    font-size: calc(1em + 7px);
+    line-height: 20px;
+    text-align: right;
+}
+
+#main-page > .text-slider .slider-info blockquote {
+    text-align: left;
+}
+
+#main-page > .text-slider .slider-info cite {
+    display: block;
+    margin-right: 100px;
+    font-style: normal;
+}
+
+#main-page > .text-slider .text-slider-points {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+#main-page > .text-slider .slick-dots li {
+    background-color: rgba(141, 192, 75, 0.32);
+    width: 50px;
+    height: 6px;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    bottom: 23px;
+    z-index: 1;
+}
+
+#main-page > .text-slider .slick-dots {
+    text-align: center;
+}
+
+#main-page > .text-slider .slick-dots li button {
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+}
+
+#main-page > .text-slider .slick-dots li:hover {
+    cursor: pointer;
+}
+
+#main-page > .text-slider .slick-dots li:last-child {
+    margin-top: 0;
+}
+
+#main-page > .text-slider .slick-dots li.slick-active {
+    background-color: #8dc04b;
+}
+
+/* -------------------------------------------------------------------- */
+/* ------------------------------ why we ------------------------------ */
+/* -------------------------------------------------------------------- */
+
+#main-page > .why-we {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#main-page > .why-we .why-we-left {
+    border: 4px solid #8dc04b;
+    background-color: #3b403a;
+    height: 300px;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+#main-page > .why-we .why-we-right {
+    margin-left: 20px;
+    text-align: center;
+}
+
+#main-page > .why-we .why-we-left,
+#main-page > .why-we .why-we-right {
+    width: calc(100% / 2);
+}
+
+#main-page > .why-we .why-we-txt {
+    font-size: calc(1em + 3px);
+    color: #adadad;
+    line-height: 30px;
+    text-align: left;
+}
+
+#main-page > .why-we .why-we-txt p {
+    text-indent: 20px;
+}
+
+/* -------------------------------------------------------------------- */
+/* --------------------------- certificates --------------------------- */
+/* -------------------------------------------------------------------- */
+
+#main-page > .certificates {
+    background-color: #8dc04b;
+    margin-top: 70px;
+    text-align: center;
+}
+
+#main-page > .certificates .certificates-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+#main-page > .certificates .certificates-inner-box {
+    width: calc(100% / 4);
+    text-align: center;
+}
+
+#main-page > .certificates .certificates-inner-box img {
+    height: 115px;
+}
+
+#main-page > .certificates .certificates-inner-box:last-child img {
+    height: 125px;
+}
+
+#main-page > .certificates .corporate-txt {
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    font-size: calc(1em + 5px);
+    font-weight: bold;
+}
+
+/* -------------------------------------------------------------------- */
+/* ------------------------------- news ------------------------------- */
+/* -------------------------------------------------------------------- */
+
+#main-page > .news {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+#main-page > .news .news-wrapper {
+    display: flex;
+    margin-top: 30px;
+}
+
+#main-page > .news .news-inner {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 4);
+    margin-right: 10px;
+}
+
+#main-page > .news .news-inner:last-child {
+    margin-right: 0;
+}
+
+#main-page > .news .news-inner figure {
+    background-color: #3b403a;
+    margin: 0;
+    min-height: 200px;
+    height: 100%;
+    max-height: 240px;
+    position: relative;
+}
+
+#main-page > .news .news-inner figure span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color:  rgba(141, 192, 75, 0.7);
+    width: 100%;
+    height: 41px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: calc(1em - 2px);
+    vertical-align: baseline;
+    display: inline-block;
+    line-height: 40px
+}
+
+/* -------------------------------------------------------------------- */
+/* ---------------------- products subcategories ---------------------- */
+/* -------------------------------------------------------------------- */
+
+#main-page > .products-subcategories {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#main-page > .products-subcategories .products-subcategories-wrapper {
+    display: flex;
+    margin-top: 30px;
+}
+
+#main-page > .products-subcategories .products-subcategories-list {
+    width: calc(100% / 4);
+    padding-left: 5%;
+}
+
+#main-page > .products-subcategories .products-subcategories-list li {
+    font-size: calc(100% + 3px);
+    color: #adadad;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+#main-page > .products-subcategories .products-subcategories-list li span {
+    margin-left: 10px;
+}
+
+#main-page > .products-subcategories .products-subcategories-list li svg {
+    color: #8dc04b;
+}
+
+/* -------------------------------------------------------------------- */
+/* ----------------------------- seo text ----------------------------- */
+/* -------------------------------------------------------------------- */
+
+#main-page > .seo-text {
+    text-align: center;
+}
+
+#main-page > .seo-text .products-subcategories-under-wrap {
+    font-size: calc(1em + 3px);
+    color: #868686;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    margin-top: 35px;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+#main-page > .seo-text .products-subcategories-under-wrap::before {
+    content: '';
+    border-top: 1px solid #8dc04b;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+}
+
+#main-page > .seo-text .products-subcategories-more {
+    color: #8dc04b;
+    font-weight: bold;
+    padding: 0 5px;
+    display: inline-block;
+    height: 1em;
+    position: relative;
+    top: 2px;
+}
+
+#main-page > .seo-text .products-subcategories-more:hover {
+    cursor: pointer;
+}
+
+#main-page > .seo-text .seo-txt-inner {
+    max-width: 525px;
+    margin: auto;
+    display: none;
+}
+
+#main-page > .seo-text .products-subcategories-more {
+    transform: rotate(0deg);
+    transition: transform 0.5s linear;
+}
+
+#main-page > .seo-text .products-subcategories-more svg {
+    vertical-align: baseline;
+}
+
+#main-page > .seo-text .products-subcategories-more.cross-rotate {
+    transform: rotate(45deg);
+    transition: transform 0.5s linear;
+}
+
+/* -------------------------------------------------------------------- */
+/* ----------------------------- contacts ----------------------------- */
+/* -------------------------------------------------------------------- */
+#main-page > .contacts {
+    position: relative;
+    margin-top: 40px;
+}
+
+#main-page > .contacts #map_canvas {
+    height: 750px;
+}
+
+#main-page > .contacts .map-left-side {
+    display: flex;
+    justify-content: flex-end;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    width: 50%;
+    height: 750px !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#main-page > .contacts #van_map_img {
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    width: 100%;
+    height: 360px;
+}
+
+#main-page > .contacts .van_animation {
+    animation-name: park-van;
+    animation-duration: 2.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes park-van {
+    40% {
+        right: 50%;
+    }
+    100% {
+        right: 20%;
+    }
+}
+
+#main-page > .contacts .map-list {
+    margin-top: 35px;
+    display: block;
+}
+
+#main-page > .contacts .map-list li {
+    color: #fff;
+    font-size: calc(1em + 11px);
+    margin-bottom: 30px;
+}
+
+#main-page > .contacts .map-list li svg {
+    color: #8dc04b;
+}
+
+#main-page > .contacts .map-list li:first-child svg {
+    transform: rotate(105deg);
+}
+
+#main-page > .contacts .map-list li span {
+    margin-left: 20px;
+}
+
+#main-page > .contacts .map-left-side-list {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 10%;
+    margin-top: 30px;
+}
+
+#main-page > .contacts .map-left-side-list .alfasintez-form-button {
+    margin: 0 auto;
+}

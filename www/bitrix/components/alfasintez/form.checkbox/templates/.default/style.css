@@ -1,0 +1,34 @@
+.alfasintez-form-checkbox
+{
+	align-items: center;
+	display: flex;
+}
+.alfasintez-form-checkbox input
+{
+	display: none;
+}
+.alfasintez-form-checkbox .icon
+{
+	border: 1px solid #EEE;
+	border-radius: 4px;
+	box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.5);
+	color: transparent;
+	cursor: pointer;
+	display: flex;
+	font-size: 12px;
+	margin-right: 3px;
+	padding: 2px 3px;
+	transition: 0.5s;
+}
+.alfasintez-form-checkbox.checked .icon
+{
+	color: #7EB341;
+}
+.alfasintez-form-checkbox label
+{
+	cursor: pointer;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: calc(100% - 16px - 3px);
+}
